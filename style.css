@@ -80,3 +80,45 @@ h1{
     border: 4px solid black;
     border-radius:50px;
 }
+#tech{
+    display: grid;
+    grid-template-columns:30% 40% 30%;
+    margin-top: 20px;
+    /* background-color: rgba(61, 60, 60, 0.452);
+    border-radius: 20px; */
+}
+.prog{
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+}
+.prog img{
+    height: 120px;
+    width: auto;
+}
+.prog img:hover{
+   transform: scale(1.25,1.25);
+}
+
+@media screen and (max-width:700px) {
+    #box-details{
+        grid-template-columns: auto;
+        padding-left: 20px;
+
+    }
+    #intro{
+        order: 2;
+        margin-top: 10px;
+    }
+    #photo{
+        order: 1;
+        margin-bottom: 10px;
+    }
+    #job-details{
+        width: inherit;
+    }
+    #tech{
+        grid-template-columns: auto;
+    }
+
+}
