@@ -15,30 +15,29 @@ nav{
     color: white;
     border-radius: 50px;
 }
-ul{
+ul{ 
+    display: flex;
     list-style-type: none;
-    display: grid;
-    grid-template-columns:  auto auto auto auto;
-    height: inherit;
-
-}
-li{ font-size: 0.2;
-    display: grid;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+   
 }
-
+li{
+    /* background-color: brown;
+    border: 2px solid white; */
+    text-align:center;
+}
 h1{
-    
+    /* bcakground-color: aqua; */
+    display: grid;
     margin-top: 0px;
     height: 100%;
-    display: grid;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 #box-details{
     /* border: 1px solid black; */
-    margin-top: 20px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 80vw auto;
     align-items: center;
@@ -97,18 +96,24 @@ h1{
     width: auto;
 }
 .prog img:hover{
-   transform: scale(1.25,1.25);
+   transform: scale(1.2,1.2);
 }
 
 @media screen and (max-width:700px) {
+    #tech{
+        margin-top: 30px;
+    }
     h1{
         font-size: 100%;
     }
     h2{
-        font-size: 100%;
+        font-size: 80%;
     }
-    li{
-        font-size: 100%;
+    ul{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 3vw;
     }
     #box-details{
         grid-template-columns: auto;
