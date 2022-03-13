@@ -5,8 +5,8 @@ body{
     background-size:cover;
     background-attachment: fixed;
 }
-*:hover{
-    color: yellow;
+.active{
+    color: rgb(215, 230, 14);
 }
 nav{
     display: grid;
@@ -35,20 +35,20 @@ h1{
     align-items: center;
     justify-content: center;
 }
-#box-details{
+.box-details{
     /* border: 1px solid black; */
     margin-top: 40px;
     display: grid;
     grid-template-columns: 80vw auto;
     align-items: center;
 }
-#photo{
+.photo{
     /* border: 1px solid black; */
     height: 180px;
     display: flex;
     justify-content: center;
 }
-#intro{
+.intro{
     /* border: 1px solid black; */
     background-color:black ;
     padding: 0px 5vw 0px 5vw;
@@ -59,7 +59,7 @@ h1{
     text-align: justify;
 }
 
-#photo img{
+.photo img{
     height: inherit;
     width: auto;
     border-radius: 50%;
@@ -99,32 +99,56 @@ h1{
    transform: scale(1.2,1.2);
 }
 
+.aboutHeading{
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width:700px) {
+    .aboutHeading{
+        text-align: center;
+    }
     #tech{
         margin-top: 30px;
     }
     h1{
         font-size: 80%;
     }
-    h2{
-        font-size: 80%;
+    h2{ color: rgb(215, 230, 14);
+        font-size: 100%;
+        text-align: center;
     }
-    ul{
+    ul{ 
         font-size: 3vw;
+        text-align: center;
     }
     p{
         font-size: 3vw;
+        text-align: center;
     }
-    #box-details{
+    .box-details{
         grid-template-columns: auto;
         padding-left: 20px;
 
     }
-    #intro{
+    .intro{
         order: 2;
         margin-top: 10px;
     }
-    #photo{
+    .photo{
         order: 1;
         margin-bottom: 10px;
     }
